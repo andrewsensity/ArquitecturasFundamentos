@@ -1,4 +1,7 @@
-package com.andrew.arquitecturasfundamentos
+package com.andrew.arquitecturasfundamentos.data.remote
+
+import com.andrew.arquitecturasfundamentos.data.local.LocalMovie
+import com.andrew.arquitecturasfundamentos.data.model.Movie
 
 data class ServerMovie(
     val adult: Boolean,
@@ -16,4 +19,12 @@ data class ServerMovie(
     val vote_average: Double,
     val vote_count: Int,
     val favorite: Boolean
+)
+
+fun ServerMovie.toMovie() = Movie(
+    id = 0,
+    title = title,
+    overview = overview,
+    posterPath = poster_path,
+    favorite = favorite
 )

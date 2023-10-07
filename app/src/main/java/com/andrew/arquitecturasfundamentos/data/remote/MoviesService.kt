@@ -1,4 +1,4 @@
-package com.andrew.arquitecturasfundamentos
+package com.andrew.arquitecturasfundamentos.data.remote
 
 import retrofit2.http.GET
 

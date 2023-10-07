@@ -1,4 +1,4 @@
-package com.andrew.arquitecturasfundamentos
+package com.andrew.arquitecturasfundamentos.data.remote
 
 data class MovieResult(
     val page: Int,
